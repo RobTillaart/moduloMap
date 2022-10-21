@@ -1,7 +1,7 @@
 {
   "name": "moduloMap",
   "keywords": "fmod, map, circular mapping",
-  "description": "ACS712 library for Arduino. ",
+  "description": "Arduino library for the moduloMap class.",
   "authors":
   [
     {
