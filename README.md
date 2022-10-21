@@ -30,16 +30,28 @@ or even -90..270 degrees.
 Other name might be circular mapping.
 
 
-## Version
-
-0.1.0 is initial version, the reference implementation.
-
 
 ## Interface
 
 - **moduloMap()** constructor.
-- **void begin(float minimum, float maximum)**
-- **float map(float value)**
+- **bool begin(float minimum, float maximum)** define the range the numbers should be mapped to.
+Returns true if minimum < maximum, false otherwise.
+- **float map(float value)** actual mapping of a value to within the range.
+
+Get internal parameters (debug)
+- **float getMinimum()** idem.
+- **float getMaximum()** idem.
+- **float getRange()** idem.
+
+
+## Performance
+
+Tested with moduloMap_performance.ino on AVR.
+
+|  version  |  1000 x map  |
+|:---------:|:------------:|
+|  0.1.0    |  44120 us    |
+|  0.1.1    |  36340 us    |
 
 
 ## Operation
@@ -52,11 +64,8 @@ The examples show the basic working of the functions.
 - optimize performance
 - add examples
 - move code to .cpp file
-- add changelog.md
-- add performance test
 - are there other than circular modulos
   - triangular, fractal?
 - add link to related libraries
   - angles + fastmap?
-- elaborate API.
 
