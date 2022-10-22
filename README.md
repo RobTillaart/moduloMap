@@ -22,7 +22,7 @@ Imagine the real number line rolled around a defined circle.
 After one rotation numbers start over again.
 
 E.g. map all the real numbers to the interval \[7; 13>. 
-That is module 6, with numbers 7..13 do not change as they are already in the range.
+That is modulo 6, with numbers 7..13 do not change as they are already in the range.
 Thus 6 is mapped on 12, 5 on 11, 4 on 10, .. 1 on 7, 0 on 12 -1 on 11 etc.
 Similar the numbers in between e.g 5.5 is mapped on 11.5 
 
@@ -52,7 +52,7 @@ wheels with known circumference.
 Returns true if minimum < maximum, false otherwise.
 - **float map(float value)** actual mapping of a value to a number within the range.
 - **float rotations(float value)** how many ranges (maximum - minimum) fit in a given length.  
-Think of it as how many rotations must a hoist must make to free a rope of given length.
+Think of it as how many rotations must a hoist must make to "free" a rope of given length.
 Or how many rotations a hoist has to make to roll up a rope of given length.
 This includes the minimum that already has rolled off / should stay rolled off.
 
@@ -78,13 +78,25 @@ The examples show the basic working of the functions.
 
 
 ## Future
+
+#### must
+
 - elaborate documentation
-- optimize performance
 - add examples
+
+#### should
+
 - move code to .cpp file
+
+#### could
+
 - are there other than circular modulos
-  - triangular, fractal?
+  - triangular, square, pentagram, fractal?
+  - increasing length per rotation (complex)
 - add link to related libraries
   - angles + fastmap?
 - add **begin(float radius)**
   - assumes circle from 0..max
+
+#### wont
+
