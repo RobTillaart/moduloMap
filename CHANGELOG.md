@@ -12,7 +12,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - sort of optimized **map()** by removing test.
   (depends on input).
 - **bool begin()** checks input minimum < maximum
-
+- add **rotations(float value)** 
+- update documentation
 
 ## [0.1.0] - 2022-10-15
 - initial version (experimental)

@@ -56,6 +56,14 @@ public:
     return mm;
   }
 
+  //  Think of it as how many rotations must a hoist make to free a rope of given length.
+  //  Or how many rotations a cylinder has to make to roll up a rope of given length.
+  //  This includes the minimum that already has rolled off.
+  float rotations(float value)
+  {
+    return (value - _minimum) / _range;
+  }
+
 
 ///////////////////////////////////////////
 //
