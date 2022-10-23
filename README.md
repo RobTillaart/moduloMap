@@ -18,12 +18,13 @@ The moduloMap is an experimental library that optimizes modular mapping.
 How do I define modular mapping?
 
 Imagine the mapping of all real numbers on a subset in a modular way.
-Imagine the real number line rolled around a defined circle. 
-After one rotation numbers start over again.
+Imagine the real number line rolled around a defined circle with a minimum and maximum value.
+After one rotation the numbers mapped to start over again.
 
-E.g. map all the real numbers to the interval \[7; 13>. 
-That is modulo 6, with numbers 7..13 do not change as they are already in the range.
-Thus 6 is mapped on 12, 5 on 11, 4 on 10, .. 1 on 7, 0 on 12 -1 on 11 etc.
+E.g. moduloMap(7, 13) maps all the real numbers to the interval \[7; 13> modulo 6.
+
+So the numbers 7..13 do not change as they are already within the range 7-13.
+The number 6 is mapped on 12, 5 on 11, 4 on 10, .. 1 on 7, 0 on 12 -1 on 11 etc.
 Similar the numbers in between e.g 5.5 is mapped on 11.5 
 
 Note: there is no scaling.
