@@ -64,6 +64,7 @@ Other mapping libraries
 - https://github.com/RobTillaart/map2colour
 - https://github.com/RobTillaart/moduloMap
 - https://github.com/RobTillaart/MultiMap
+- https://github.com/RobTillaart/AngleConvertor convert rotations to degrees etc.
 
 
 ## Interface
